@@ -178,3 +178,21 @@ footer{
     width: 100%;
     height: 8vh;
 }
+
+
+/* Page de About */
+
+.tech-stack{
+    margin-top: 5em;
+    width: 80%;
+}
+
+.galery-wrapper{
+    overflow-x: auto;
+}
+
+.galery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
