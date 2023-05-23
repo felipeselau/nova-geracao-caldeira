@@ -189,10 +189,16 @@ footer{
 
 .galery-wrapper{
     overflow-x: auto;
+    height: 20vh;
 }
 
 .galery{
     display: flex;
     flex-flow: row nowrap;
-    gap: 1em;
+    align-items: center;
+}
+
+.galery-item{
+    padding-right: 1em;
+    height: 10em;
 }
