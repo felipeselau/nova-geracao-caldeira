@@ -1,3 +1,11 @@
+:root{
+    --cor-primaria: #030303;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +16,8 @@
 }
 
 body{
-    background-color: #030303;
-    color: #f6f6f6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,12 +54,12 @@ header{
 }
 
 .active{
-    border-bottom: #22D4FD 1px solid;
+    border-bottom: var(--cor-terciaria) 1px solid;
 }
 
 .nav-item a{
     text-decoration: none;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -62,7 +70,7 @@ header{
 
 .navbar span{
     margin-right: 10%;
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
     cursor: pointer;
 
 }
@@ -117,7 +125,7 @@ main{
 }
 
 span{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 
@@ -136,7 +144,7 @@ span{
     text-decoration: none;
     color: #eee;
 
-    border: 1px solid #22D4FD;
+    border: 1px solid var(--cor-terciaria);
     padding: 20px 60px;
 
     display: flex;
@@ -146,9 +154,9 @@ span{
 }
 
 .socials a:hover{
-    background-color: #22D4FD;
-    border: 1px solid #030303;
-    color: #030303;
+    background-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
 }
 
 .socials a:hover .social-icon{
@@ -170,7 +178,7 @@ span{
     height: 100%;
     width: auto;
     
-    box-shadow: 20px -20px #22D4FD ;
+    box-shadow: 20px -20px var(--cor-terciaria) ;
 
 }
 
@@ -187,9 +195,24 @@ footer{
     width: 80%;
 }
 
+.tech-stack h2{
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.line{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    height: 1px;
+    font-size: 2em;
+}
+
 .galery-wrapper{
     overflow-x: auto;
     height: 20vh;
+    margin: 3em 0 1em 0;
 }
 
 .galery{
@@ -201,4 +224,8 @@ footer{
 .galery-item{
     padding-right: 1em;
     height: 10em;
+}
+
+.text-2{
+    
 }
